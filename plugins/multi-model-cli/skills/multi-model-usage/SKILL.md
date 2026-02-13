@@ -26,10 +26,12 @@ This skill provides guidance on using external model CLIs (OpenAI Codex CLI and 
 
 ## Authentication
 
-Both CLIs use OAuth browser-based login flows:
+Both CLIs use OAuth browser-based login flows. The exact auth commands may vary
+by CLI version — the setup command will detect the correct commands for your
+installed versions:
 
-- **Codex CLI**: Uses `codex auth login` to open a browser for OpenAI OAuth
-- **Gemini CLI**: Uses `gemini auth login` to open a browser for Google OAuth
+- **Codex CLI**: Typically uses `codex auth login` for OpenAI OAuth
+- **Gemini CLI**: Typically uses `gemini auth login` for Google OAuth
 
 Authentication tokens are stored locally by each CLI tool and persist across sessions.
 
